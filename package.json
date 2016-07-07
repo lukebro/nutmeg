@@ -1,0 +1,25 @@
+{
+  "name": "nutmeg",
+  "version": "0.1.0",
+  "author": "Lukasz Brodowski",
+  "license": "MIT",
+  "description": "Simple and fast library for building trees",
+  "keywords": [
+    "tree",
+    "graph",
+    "search",
+    "traversal",
+    "vertex"
+  ],
+  "main": "dist/nutmeg.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukebro/nutmeg.git"
+  },
+  "bugs": "https://github.com/lukebro/nutmeg/issues",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  }
+}
