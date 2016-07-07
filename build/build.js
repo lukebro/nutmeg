@@ -26,12 +26,13 @@ rollup.rollup({
 	return rollup.rollup({
 		entry: 'dist/nutmeg.js',
 		plugins: [
-	 		uglify()
+	 		uglify({
+	 			banner: banner
+	 		})
 	 	]
 	}).then(function (bundle) {
-		return write('dist/nutmeg.min.js', bundle.generate({
+		return write('dist/nutmeg.min.js', banner + '\n' + bundle.generate({
 			format: 'umd',
-			banner: banner,
 			moduleName: 'Nutmeg'
 		}).code)
 	})
